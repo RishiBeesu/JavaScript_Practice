@@ -24,6 +24,7 @@ if (marks >= 80 && marks <= 100) {
 } else {
     console.log('Enter valid marks');
 }
+
 // Check if the season is Autumn, Winter, Spring or Summer. If the user input is :
 // September, October or November, the season is Autumn.
 // December, January or February, the season is Winter.
@@ -59,6 +60,7 @@ switch(month){
   default:
     console.log('Please enter a valid month')
 }
+
 // Check if a day is weekend day or a working day. Your script will take day as an input.
 // What is the day  today? Saturday
 // Saturday is a weekend.

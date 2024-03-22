@@ -13,6 +13,7 @@ do {
     d1++
 }
 while(d1<=10)
+
 // Iterate 10 to 0 using for loop, do the same using while and do while loop
 for (let i = 10; i >= 0; i--) {
     console.log(i)
@@ -28,12 +29,14 @@ do {
     d2--
 }
 while(d2>=0)
+
 // Iterate 0 to n using for loop
 const readlineSync = require('readline-sync')
 const n = readlineSync.question('Enter value of n: ')
 for(let i=0; i<=n; i++) {
     console.log(i)
 }
+
 // Write a loop that makes the following pattern using console.log():
 //     #
 //     ##
@@ -48,6 +51,7 @@ for(let i = 1; i <= p1; i++){
     pattern1 += '#'
     console.log(pattern1)
 }
+
 // Use loop to print the following pattern:
 // 0 x 0 = 0
 // 1 x 1 = 1
@@ -64,6 +68,7 @@ const p2 = readlineSync.question('No of rows needed: ')
 for(let i = 0; i < p2; i++){
     console.log(`${i} x ${i} = ${i*i}`)
 }
+
 // Using loop print the following pattern
 //  i    i^2   i^3
 //  0    0     0
@@ -81,18 +86,21 @@ const p3 = readlineSync.question('No of rows needed: ')
 for(let i = 0; i < p3; i++){
     console.log(`${i} ${i*i} ${i*i*i}`)
 }
+
 // Use for loop to iterate from 0 to 100 and print only even numbers
 for(let i=0;i<=100;i++){
     if(i % 2 === 0){
         console.log(i)
     }
 }
+
 // Use for loop to iterate from 0 to 100 and print only odd numbers
 for(let i=0;i<=100;i++){
     if(i % 2 !== 0){
         console.log(i)
     }
 }
+
 // Use for loop to iterate from 0 to 100 and print only prime numbers
 for(let i=2;i<=100;i++){
     let isPrime = true
@@ -106,6 +114,7 @@ for(let i=2;i<=100;i++){
         console.log(i)
     }
 }
+
 // Use for loop to iterate from 0 to 100 and print the sum of all numbers.
 // The sum of all numbers from 0 to 100 is 5050.
 let sum100 = 0
@@ -113,6 +122,7 @@ for(let i=0;i<=100;i++){
     sum100 += i
 }
 console.log(sum100)
+
 // Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
 // The sum of all evens from 0 to 100 is 2550. And the sum of all odds from 0 to 100 is 2500.
 let sumEven100 = 0
@@ -127,18 +137,21 @@ for(let i=0;i<=100;i++){
 }
 console.log(sumEven100)
 console.log(sumOdd100)
+
 // Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds. Print sum of evens and sum of odds as array
 //   [2550, 2500]
 let sumArr100 = []
 sumArr100.push(sumEven100)
 sumArr100.push(sumOdd100)
 console.log(sumArr100)
+
 // Develop a small script which generate array of 5 random numbers
 let arrRan = []
 for(let i = 0; i < 5; i++) {
     arrRan.push(Math.floor(Math.random()*10))
 }
 console.log(arrRan)
+
 // Develop a small script which generate array of 5 random numbers and the numbers must be unique
 let arrRanUnq = []
 for(let i = 1; i <= 5; i++) {
@@ -149,6 +162,7 @@ for(let i = 1; i <= 5; i++) {
     arrRanUnq.push(num)
 }
 console.log(arrRanUnq)
+
 // Develop a small script which generate a six characters random id:
 // 5j2khz
 let allChar = 'QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm1234567890'

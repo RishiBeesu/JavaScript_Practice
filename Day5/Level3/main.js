@@ -29,6 +29,7 @@ console.log(Math.abs(max - average).toFixed(2),Math.abs(min - average).toFixed(2
 //Slice the first ten countries from the countries array
 const countries = require('./countries.js')
 console.log(countries.slice(0,10))
+
 // Find the middle country(ies) in the countries array
 let middleCountry = []
 if(countries.length % 2 ===0){
@@ -39,6 +40,7 @@ else {
     middleCountry.push(countries[(countries.length - 1) / 2])
 }
 console.log(middleCountry)
+
 // Divide the countries array into two equal arrays if it is even. If countries array is not even , one more country for the first half.
 let firstHalfCountries
 let secondHalfCountries

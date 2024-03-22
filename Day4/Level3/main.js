@@ -32,6 +32,7 @@ switch(month.toLowerCase()){
     default:
         console.log('please enter a valid month')
 }
+
 //   Write a program which tells the number of days in a month, now consider leap year.
 let newMonth = 'FebRuary'
 let year = 2020
