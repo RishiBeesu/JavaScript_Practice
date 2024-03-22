@@ -1,4 +1,5 @@
 const users = require('./users.js')
+
 // Find the person who has many skills in the users object.
 const manySkills = []
 for(let user in users){
@@ -7,6 +8,7 @@ for(let user in users){
   }
 }
 console.log(manySkills)
+
 // Count logged in users, count users having greater than equal to 50 points from the following object.
 const loggedUsers = []
 const points50 = []
@@ -20,6 +22,7 @@ for(let user in users){
 }
 console.log(loggedUsers)
 console.log(points50)
+
 // Find people who are MERN stack developer from the users object
 const mernDevelopers = []
 const mongodbRegex = /mongodb/i
@@ -32,6 +35,7 @@ for(let user in users){
     }
 }
 console.log(mernDevelopers)
+
 // Set your name in the users object without modifying the original users object
 const copyUsers = Object.assign(users)
 copyUsers.Rishi = {
@@ -39,10 +43,13 @@ copyUsers.Rishi = {
     age: 23
 }
 console.log(copyUsers.hasOwnProperty('Rishi'))
+
 // Get all keys or properties of users object
 console.log(Object.keys(users))
+
 // Get all the values of users object
 console.log(Object.values(users))
+
 // Use the countries object to print a country name, capital, populations and languages.
 const country = {
     name: "India",

@@ -71,7 +71,7 @@ const products = [
   }
 ]
 
-module.export = {
+module.exports = {
     users,
     products
 }
